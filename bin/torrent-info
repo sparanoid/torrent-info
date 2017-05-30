@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const parseTorrent = require('parse-torrent');
+const version      = require('../package.json').version;
+const options      = require('docopt').docopt(`
+Usage:
+  torrent-info [options] <input>
+
+Options:
+  -h --help     Show this
+  -c --convert  Convert torrent file to magnet URI or vice versa
+
+`, { version });
+
+// Parse input (file or magnet URI)
+let input = options['<input>'];
+if (! /^magnet:/i.test(input)) {
+  input = require('fs').readFileSync(input);
+}
+let parsed = parseTorrent(input);
+
+// Convert?
+if (options['--convert']) {
+  console.log(parseTorrent[ typeof input === 'string' ? 'toTorrentFile' : 'toMagnetURI' ](parsed));
+  process.exit(0);
+}
+
+// Show.
+[ 'info', 'infoBuffer', 'infoHashBuffer' ].forEach(key => { delete parsed[key] });
+console.log(JSON.stringify(parsed, null, 2));

@@ -1,0 +1,22 @@
+{
+  "name": "torrent-info",
+  "version": "1.0.0",
+  "description": "Inspect .torrent files or magnet URI's, also convert between the two.",
+  "bin": {
+    "torrent-info": "./bin/torrent-info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertklep/torrent-info.git"
+  },
+  "author": "Robert Klep <robert@klep.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertklep/torrent-info/issues"
+  },
+  "homepage": "https://github.com/robertklep/torrent-info#readme",
+  "dependencies": {
+    "docopt": "^0.6.2",
+    "parse-torrent": "^5.8.3"
+  }
+}
