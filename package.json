@@ -17,6 +17,7 @@
   "homepage": "https://github.com/robertklep/torrent-info#readme",
   "dependencies": {
     "docopt": "^0.6.2",
+    "le-table": "^6.1.6",
     "parse-torrent": "^5.8.3"
   }
 }
