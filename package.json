@@ -7,17 +7,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertklep/torrent-info.git"
+    "url": "git+https://github.com/sparanoid/torrent-info.git"
   },
   "author": "Robert Klep <robert@klep.name>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robertklep/torrent-info/issues"
+    "url": "https://github.com/sparanoid/torrent-info/issues"
   },
-  "homepage": "https://github.com/robertklep/torrent-info#readme",
+  "homepage": "https://github.com/sparanoid/torrent-info#readme",
   "dependencies": {
     "docopt": "^0.6.2",
     "le-table": "^6.1.6",
-    "parse-torrent": "^5.8.3"
+    "parse-torrent": "^7.0.1"
   }
 }
