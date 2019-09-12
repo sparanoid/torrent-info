@@ -1,6 +1,6 @@
 {
   "name": "torrent-info",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Inspect .torrent files or magnet URI's, also convert between the two.",
   "bin": {
     "torrent-info": "./bin/torrent-info"
