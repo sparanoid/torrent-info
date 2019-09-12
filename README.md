@@ -7,7 +7,7 @@ Inspect .torrent files or magnet URI's, also convert between the two.
 Make sure you have a recent (v6+) version of Node.js installed.
 
 ```
-$ npm install robertklep/torrent-info -g
+$ npm install torrent-info -g
 ```
 
 ## Usage:
